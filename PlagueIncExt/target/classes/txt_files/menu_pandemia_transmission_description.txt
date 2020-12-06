@@ -1,0 +1,5 @@
+Pathogen can survive outside the body in fresh, warm water. Increase infectivity, especcially in humid environments and ship transmission
+Gives pathogen ability to travel on dust particles. Increase infectivity, especcially in arid enviroments and plane transmission
+Insects susceptible to infection. Carrier insects increase infectivity, especcially in hot climates and chance of mutation
+Gives organism ability to spread through blood-to blood contact. Increase infectivity, especcially in poor regions
+Livestock susceptible to infection. Increase infectivity, especcially in rural regions

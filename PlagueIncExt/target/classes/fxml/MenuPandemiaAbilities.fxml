@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="281.0" prefWidth="420.0" style="-fx-background-color: rgba(0, 0, 0, 0);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fel.pjv.client.MenuPandemiaAbilitiesController">
+   <children>
+      <HBox prefHeight="39.0" prefWidth="450.0">
+         <children>
+            <Button fx:id="transmissionBtn" mnemonicParsing="false" onAction="#transmissionBtnAction" prefHeight="49.0" prefWidth="135.0" text="Transmission" />
+            <Button fx:id="symptomsBtn" mnemonicParsing="false" onAction="#symptomsBtnAction" prefHeight="49.0" prefWidth="135.0" text="Symptoms" />
+            <Button fx:id="abilitiesBtn" mnemonicParsing="false" onAction="#abilitiesBtnAction" prefHeight="49.0" prefWidth="135.0" text="Abilities" />
+            <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#exitBtnAction" prefHeight="39.0" prefWidth="40.0" text="x">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <ImageView fitHeight="252.0" fitWidth="457.0" layoutY="39.0" opacity="0.65" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pictures/background_menu_pandemia.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="descriptionLabel" alignment="TOP_LEFT" layoutX="303.0" layoutY="87.0" prefHeight="127.0" prefWidth="123.0" text="Spend DNA points to evolve new vectors to infect people!        Increase infectivity and get bonuses to specific country types." wrapText="true">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Button fx:id="evolveBtn" disable="true" layoutX="313.0" layoutY="230.0" mnemonicParsing="false" onAction="#evolveBtnAction" prefHeight="29.0" prefWidth="103.0" text="Evolve" />
+      <HBox layoutX="32.0" layoutY="75.0" prefHeight="29.0" prefWidth="64.0">
+         <children>
+            <Button fx:id="coldResistance1" mnemonicParsing="false" onAction="#coldResistance1BtnAction" prefHeight="27.0" prefWidth="30.0" />
+            <Button fx:id="coldResistance2" mnemonicParsing="false" onAction="#coldResistance2BtnAction" prefHeight="27.0" prefWidth="30.0" visible="false" />
+         </children>
+      </HBox>
+      <HBox layoutX="32.0" layoutY="131.0" prefHeight="29.0" prefWidth="64.0">
+         <children>
+            <Button fx:id="heatResistance1" mnemonicParsing="false" onAction="#heatResistance1BtnAction" prefHeight="27.0" prefWidth="30.0" />
+            <Button fx:id="heatResistance2" mnemonicParsing="false" onAction="#heatResistance2BtnAction" prefHeight="27.0" prefWidth="30.0" visible="false" />
+         </children>
+      </HBox>
+      <HBox layoutX="32.0" layoutY="192.0" prefHeight="29.0" prefWidth="64.0">
+         <children>
+            <Button fx:id="drugResistance1" mnemonicParsing="false" onAction="#drugResistance1BtnAction" prefHeight="27.0" prefWidth="30.0" />
+            <Button fx:id="drugResistance2" mnemonicParsing="false" onAction="#drugResistance2BtnAction" prefHeight="27.0" prefWidth="30.0" visible="false" />
+         </children>
+      </HBox>
+      <HBox layoutX="152.0" layoutY="96.0" prefHeight="29.0" prefWidth="64.0">
+         <children>
+            <Button fx:id="bacterialResilience1" mnemonicParsing="false" onAction="#bacteriaResilience1BtnAction" prefHeight="27.0" prefWidth="30.0" />
+            <Button fx:id="bacterialResilience2" mnemonicParsing="false" onAction="#bacteriaResilience2BtnAction" prefHeight="27.0" prefWidth="30.0" visible="false" />
+         </children>
+      </HBox>
+      <Label fx:id="descriptionTitleLabel" alignment="CENTER" layoutX="289.0" layoutY="56.0" prefHeight="19.0" prefWidth="152.0" text="Select Transmission Trait">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="DNALabel" alignment="CENTER" layoutX="345.0" layoutY="212.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

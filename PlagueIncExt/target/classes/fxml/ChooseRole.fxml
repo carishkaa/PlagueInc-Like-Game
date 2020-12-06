@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="527.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fel.pjv.client.ChooseRoleController">
+   <children>
+      <Label layoutX="52.0" layoutY="38.0" prefHeight="29.0" prefWidth="334.0" text="Who do you want to play for?">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <HBox layoutX="52.0" layoutY="67.0" prefHeight="38.0" prefWidth="334.0" spacing="50.0">
+         <children>
+            <RadioButton fx:id="humanityRadioBtn" mnemonicParsing="false" prefHeight="23.0" prefWidth="109.0" selected="true" text="humanity">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="role" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="pandemiaRadioBtn" mnemonicParsing="false" text="pandemia" toggleGroup="$role">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </HBox>
+      <ListView fx:id="PlayersListView" layoutX="52.0" layoutY="158.0" onMouseClicked="#listClicked" prefHeight="293.0" prefWidth="425.0" />
+      <Label fx:id="invitePlayerLabel" layoutX="52.0" layoutY="118.0" prefHeight="29.0" prefWidth="175.0" text="Invite a player:">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="findPlayersBtn" layoutX="375.0" layoutY="105.0" mnemonicParsing="false" onAction="#findPlayersBtnAction" prefHeight="23.0" prefWidth="102.0" text="FInd players" />
+      <Button fx:id="chooseRoleOKBtn" disable="true" layoutX="125.0" layoutY="467.0" mnemonicParsing="false" onAction="#chooseRoleOKBtnAction" prefHeight="29.0" prefWidth="109.0" text="OK">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="chooseRoleCancelBtn" layoutX="292.0" layoutY="467.0" mnemonicParsing="false" onAction="#chooseRoleCancelBtnAction" prefHeight="29.0" prefWidth="109.0" text="Cancel">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,7 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Authors Karina Balagazova and Daria Dunina
+<#if licenseLast??>
+${licenseLast}
+</#if>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fel.pjv.client.StartPackHumanityController">
+   <children>
+      <ListView fx:id="startPackList" layoutX="94.0" layoutY="88.0" onMouseClicked="#propertySelected" prefHeight="239.0" prefWidth="206.0" />
+      <Label fx:id="packDescription" alignment="TOP_LEFT" layoutX="300.0" layoutY="88.0" prefHeight="239.0" prefWidth="239.0" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="toMapWindowButton" layoutX="509.0" layoutY="359.0" mnemonicParsing="false" onAction="#toMapWindowButtonAction" text="Start" />
+
+      <VBox layoutX="68.0" layoutY="93.0" prefHeight="229.0" prefWidth="26.0" spacing="4.4" AnchorPane.topAnchor="93.0">
+         <children>
+            <CheckBox fx:id="checkBox1" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" />
+            <CheckBox fx:id="checkBox2" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" />
+            <CheckBox fx:id="checkBox3" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" />
+            <CheckBox fx:id="checkBox4" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" />
+            <CheckBox fx:id="checkBox5" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" />
+            <CheckBox fx:id="checkBox6" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" />
+            <CheckBox fx:id="checkBox7" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" />
+            <CheckBox fx:id="checkBox8" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" />
+            <CheckBox fx:id="checkBox9" mnemonicParsing="false" prefHeight="20.0" prefWidth="20.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
