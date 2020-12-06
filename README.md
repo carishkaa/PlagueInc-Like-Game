@@ -7,5 +7,5 @@ An expanded version of the famous game PlagueInc. The game has 2 modes, you can 
 ---------------------
 Server by Daria Dunina  
 Simulation and Client by Karina Balagazova  
-The main goal of the semester project was to create a working game engine, in connection with which we made more emphasis on the work between the server and the client, and omitted some details (such as design, names, etc.), so the application requires minor improvements.  
+The main goal of the semester project was to create a working game engine and simulation, therefore, we made more emphasis on the work between the server and the client, and omitted some details (such as design, names, etc.), so the application requires minor improvements.  
 2019
