@@ -78,6 +78,8 @@ public class ConnectingController implements Initializable {
         } catch (Exception ex) {
             Logger.getLogger(ConnectingController.class.getName()).log(Level.SEVERE, null, ex);
             ConnectLbl.setText("Connection couldn't be established");
+            ConnectPgb.setVisible(false);
+            OKBtn.setDisable(false);
         }
     }
     
